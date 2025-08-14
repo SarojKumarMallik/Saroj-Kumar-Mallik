@@ -7,7 +7,14 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+// Allow only your Vercel frontend
+app.use(cors({
+  origin: ["https://saroj-kumar-mallik.vercel.app"], // frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
