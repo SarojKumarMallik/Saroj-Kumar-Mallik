@@ -7,7 +7,7 @@ import "swiper/css";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-r from-blue-50 via-white to-blue-50 flex items-center justify-center px-6 md:px-20 overflow-hidden">
+    <section className="relative w-full min-h-screen bg-gradient-to-r from-blue-50 via-white to-blue-50 flex items-center justify-center px-6 md:px-20 overflow-hidden pt-20 md:pt-0">
       {/* Background Blur Shapes */}
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-300 rounded-full blur-3xl opacity-40"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-300 rounded-full blur-3xl opacity-30"></div>
@@ -18,25 +18,25 @@ export default function Hero() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center md:text-left"
+          className="text-left" // ✅ Always align text left, even on mobile
         >
           <h2 className="text-lg font-semibold tracking-widest text-blue-600 uppercase mb-3">
             Creovate Technologies
           </h2>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-            Build{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Modern Apps
-            </span>{" "}
-            <br />
-            & Scalable Websites
-          </h1>
-          <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+         <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-6">
+  Build{" "}
+  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+    Modern Apps
+  </span>{" "}
+  <br />
+  & Scalable Websites
+</h1>
+          <p className="text-lg text-gray-600 mb-8 max-w-lg">
             We craft high-performing web applications, mobile apps, and digital
             solutions that drive business growth and brand visibility.
           </p>
 
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-4">
             <a
               href="/contact"
               className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition"
@@ -57,13 +57,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative w-full max-w-lg mx-auto" // 🔥 increased width
+          className="relative w-full max-w-lg mx-auto"
         >
           <Swiper
             modules={[Autoplay]}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             loop={true}
-            className="w-full h-[420px]" // 🔥 taller slider
+            className="w-full h-[420px]"
           >
             <SwiperSlide>
               <img
