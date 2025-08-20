@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
-import loaderAnimation from "./assets/lottie/loader.json"; // Lottie JSON file
+import loaderAnimation from "./assets/lottie/loader.json"; 
 import Footer from "./components/Footer";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
-import Contact from "./components/Contact";  // ✅ Import Contact page
+import Contact from "./components/Contact";  
+import Home from "./components/Home";
+
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
       <Navbar />
       {/* <Footer/> */}
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

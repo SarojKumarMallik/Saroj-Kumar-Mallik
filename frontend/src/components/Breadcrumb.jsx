@@ -8,7 +8,7 @@ export default function Breadcrumb({ paths, title = "" }) {
         className="absolute inset-0 h-[400px] sm:h-[450px] md:h-[500px]"
         style={{
           backgroundImage:
-            'url("https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg")',
+            'url("/assets/images/contact.webp")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(0.6) contrast(1.1)",
