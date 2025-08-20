@@ -34,13 +34,10 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Footer/>
+      {/* <Footer/> */}
       <Routes>
-        {/* <Route path="/" element={<Home />} />         
-        <Route path="/about" element={<About />} />     */}
-        <Route path="/contact" element={<Contact />} /> {/* ✅ Contact Page */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-
     </Router>
   );
 }
