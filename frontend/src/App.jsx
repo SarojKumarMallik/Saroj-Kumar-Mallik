@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
 import loaderAnimation from "./assets/lottie/loader.json"; // Lottie JSON file
+import Footer from "./components/Footer";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -33,11 +34,13 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <Footer/>
       <Routes>
         {/* <Route path="/" element={<Home />} />         
         <Route path="/about" element={<About />} />     */}
         <Route path="/contact" element={<Contact />} /> {/* ✅ Contact Page */}
       </Routes>
+
     </Router>
   );
 }
