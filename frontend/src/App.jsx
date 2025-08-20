@@ -1,12 +1,17 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
 import loaderAnimation from "./assets/lottie/loader.json"; // Lottie JSON file
+
+// Components
 import Navbar from "./components/Navbar/Navbar";
+import Contact from "./components/Contact";  // ✅ Import Contact page
+
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-  // Preloader (1 second delay)
+  // Preloader (2 second delay)
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
@@ -26,13 +31,14 @@ function App() {
   }
 
   return (
-    <>
+    <Router>
       <Navbar />
-      <main className="p-4">
-        <h1 className="text-2xl font-bold">Welcome to Creovate Solutions</h1>
-        {/* other routes/pages/components go here */}
-      </main>
-    </>
+      <Routes>
+        {/* <Route path="/" element={<Home />} />         
+        <Route path="/about" element={<About />} />     */}
+        <Route path="/contact" element={<Contact />} /> {/* ✅ Contact Page */}
+      </Routes>
+    </Router>
   );
 }
 
