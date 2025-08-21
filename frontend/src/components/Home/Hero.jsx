@@ -18,7 +18,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-left" // ✅ Always align text left, even on mobile
+          className="text-left" 
         >
           <h2 className="text-lg font-semibold tracking-widest text-blue-600 uppercase mb-3">
             Creovate Technologies
