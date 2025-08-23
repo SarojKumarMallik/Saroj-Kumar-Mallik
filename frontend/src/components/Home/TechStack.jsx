@@ -29,21 +29,20 @@ import {
   SiReact,
   SiPostgresql,
   SiOracle,
+  SiJest,
+  SiMocha,
+  SiCypress,
+  SiSelenium, SiGooglecloud
 } from "react-icons/si";
+// import { TbBrandSelenium } from "react-icons/tb";
+import AwsLogo from "/assets/video/aws.png";
+import AzureLogo from "/assets/video/azure.png";
 
 export default function TechStack() {
-  const [activeTab, setActiveTab] = useState("Backend");
+  const [activeTab, setActiveTab] = useState("Frontend");
 
   const techCategories = {
-    Backend: [
-      { Icon: FaNodeJs, label: "Node.js", color: "text-green-600" },
-      { Icon: SiExpress, label: "Express.js", color: "text-gray-700" },
-      { Icon: FaPhp, label: "PHP", color: "text-indigo-600" },
-      { Icon: FaPython, label: "Python", color: "text-yellow-600" },
-      { Icon: FaJava, label: "Java", color: "text-red-600" },
-      { Icon: SiDotnet, label: ".NET Core", color: "text-purple-600" },
-      { Icon: SiRubyonrails, label: "Rails", color: "text-red-500" },
-    ],
+   
     Frontend: [
       { Icon: FaReact, label: "React", color: "text-sky-500" },
       { Icon: SiNextdotjs, label: "Next.js", color: "text-black" },
@@ -54,6 +53,15 @@ export default function TechStack() {
       { Icon: SiTailwindcss, label: "Tailwind", color: "text-cyan-500" },
       { Icon: FaBootstrap, label: "Bootstrap", color: "text-purple-600" },
     ],
+     Backend: [
+      { Icon: FaNodeJs, label: "Node.js", color: "text-green-600" },
+      { Icon: SiExpress, label: "Express.js", color: "text-gray-700" },
+      { Icon: FaPhp, label: "PHP", color: "text-indigo-600" },
+      { Icon: FaPython, label: "Python", color: "text-yellow-600" },
+      { Icon: FaJava, label: "Java", color: "text-red-600" },
+      { Icon: SiDotnet, label: ".NET Core", color: "text-purple-600" },
+      { Icon: SiRubyonrails, label: "Rails", color: "text-red-500" },
+    ],
     Databases: [
       { Icon: SiMongodb, label: "MongoDB", color: "text-green-700" },
       { Icon: SiMysql, label: "MySQL", color: "text-blue-600" },
@@ -61,12 +69,18 @@ export default function TechStack() {
       { Icon: SiOracle, label: "Oracle", color: "text-red-700" },
       { Icon: FaDatabase, label: "SQL", color: "text-gray-600" },
     ],
-    CloudTesting: [
-      { Icon: SiDjango, label: "Django", color: "text-green-800" },
+    Testing: [
+      { Icon: SiJest, label: "Jest", color: "text-red-500" },
+      { Icon: SiMocha, label: "Mocha", color: "text-yellow-700" },
+      { Icon: SiCypress, label: "Cypress", color: "text-green-600" },
+      { Icon: SiSelenium, label: "Selenium", color: "text-blue-600" },
     ],
-    DevOps: [
+   "Cloud & DevOps" : [
       { Icon: SiDocker, label: "Docker", color: "text-blue-500" },
       { Icon: SiKubernetes, label: "Kubernetes", color: "text-sky-600" },
+ { Icon: () => <img src={AwsLogo} alt="AWS" className="w-20 h-20" />, label: "AWS", color: "" },
+     { Icon: () => <img src={AzureLogo} alt="Azure" className="w-20 h-20" />, label: "Azure", color: "" },
+  { Icon: SiGooglecloud, label: "GCP", color: "text-sky-500" },
     ],
     
   };
@@ -108,7 +122,7 @@ export default function TechStack() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 mt-12 justify-items-center"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 mt-12 justify-items-center"
       >
         {techCategories[activeTab].map(({ Icon, label, color }, index) => (
           <motion.div

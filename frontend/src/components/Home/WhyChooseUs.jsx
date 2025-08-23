@@ -24,7 +24,9 @@ export default function WhyChooseUs() {
     <section className="py-16"> {/* ✅ No background applied */}
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Section Heading */}
-        <p className="text-[#228B22] font-medium mb-2">Why Choose Us</p>
+       <p className="text-orange-500 font-semibold tracking-widest mb-3 uppercase text-lg md:text-xl">
+          Our Services
+        </p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Discover Effortless Customer Support
         </h2>

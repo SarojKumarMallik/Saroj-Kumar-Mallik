@@ -23,17 +23,17 @@ export default function Hero() {
           <h2 className="text-lg font-semibold tracking-widest text-blue-600 uppercase mb-3">
             Creovate Technologies
           </h2>
-         <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold leading-snug mb-6">
-  Build{" "}
+         <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-4xl font-bold leading-snug mb-6">
+  Professional{" "}
   <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-    Modern Apps
-  </span>{" "}
-  <br />
-  & Scalable Websites
+Web Development & SEO Services</span>{" "}
+  {/* <br /> */}
+  in Bhubaneswar
 </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-lg">
-            We craft high-performing web applications, mobile apps, and digital
-            solutions that drive business growth and brand visibility.
+          We build high-performing websites that load fast, look modern, and rank higher on Google.
+Our SEO strategies help your business get discovered by the right audience.
+With Creovate Technologies, your brand grows with visibility, traffic, and trust.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -96,7 +96,7 @@ export default function Hero() {
             className="absolute -top-6 -right-6 bg-white shadow-xl rounded-xl px-5 py-3"
           >
             <p className="text-sm font-semibold text-gray-700">
-              🚀 Trusted by 200+ Clients
+              🚀 Trusted by 25+ Clients
             </p>
           </motion.div>
         </motion.div>

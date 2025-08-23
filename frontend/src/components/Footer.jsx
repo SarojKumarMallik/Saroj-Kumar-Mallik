@@ -79,13 +79,13 @@ export default function WaveFooter() {
               Phone: <a href="tel:+918114780031" className="hover:text-white">+91 8114780031</a>
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61578990689435" target="_blank" rel="noopener noreferrer">
                 <Facebook className="w-6 h-6 hover:text-blue-500 cursor-pointer" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/creovatetechnologies" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-6 h-6 hover:text-pink-500 cursor-pointer" />
               </a>
-              <a href="https://linkedin.com/company/creovate" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/creovate-technologies-022201378/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-6 h-6 hover:text-blue-400 cursor-pointer" />
               </a>
               <a href="mailto:creovatetechnologies@gmail.com">

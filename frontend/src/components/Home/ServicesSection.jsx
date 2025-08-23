@@ -24,7 +24,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-extrabold mb-6 leading-snug text-gray-900"
+          className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-gray-900"
         >
           Check What Services We Provide
         </motion.h2>
